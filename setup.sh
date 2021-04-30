@@ -7,5 +7,6 @@ sudo apt-get install git
 # Clone repo
 git clone https://github.com/tomergroisman/parking-lot-manager.git
 cd parking-lot-manager
+npm install
 # Start app
 npm start
