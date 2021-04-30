@@ -1,0 +1,11 @@
+{
+  "name": "parking-lot-manager",
+  "version": "1.0.0",
+  "description": "Parking Lot Manager - Ex 1 Cloud Computing 3031",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomer Groisman",
+  "license": "ISC"
+}
