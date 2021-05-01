@@ -15,7 +15,7 @@ The charge for parking is 10$ per hour.
 
 To start this app we need to set the environment.\
 We need to install Node JS, Git, clone the repo, install dependencies and finally run the app.\
-To do so, you can either run the following commands in the command line:
+To do so, you can either run the following commands from the command line:
 
 ``` bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
