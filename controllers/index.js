@@ -13,6 +13,10 @@ const millisToMinutes = (millis) => {
 const controllers = {
     createParking: (req, res) => {
         const { plate, parkingLot } = req.query;
+        if (!plate || !parkingLot) {
+            res.status(400).send("Plate number or parking lot wasn't provided");
+            return;
+        }
         const parking = {
             plate,
             parkingLot,
@@ -23,8 +27,12 @@ const controllers = {
     },
     clearParking: (req, res) => {
         const { parkingId } = req.query;
-        const timestamp = Date.now();
         const parking = db.remove(parkingId);
+        if (!parking) {
+            res.status(404).send("Ticket was not found");
+            return;
+        }
+        const timestamp = Date.now();
         const minutesSpent = millisToMinutes(timestamp - parking.timestamp);
         const charge = Math.ceil(minutesSpent / 15) * PERIODIC_CHARGE
         res.json({

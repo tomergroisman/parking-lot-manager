@@ -37,7 +37,7 @@ class Database {
      * @returns the removed entry
      */
     remove(parkingId) {
-        const parking = { ...this.#db[parkingId] };
+        const parking = this.#db[parkingId];
         delete this.#db[parkingId];
         return parking;
     }
