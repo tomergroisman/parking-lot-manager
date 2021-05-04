@@ -37,6 +37,7 @@ Go to your security group section, select your current security group and add ne
 
 ## Run
 
-To run the app, just run `npm start` on the project root directory
+To run the app, just run `npm start <port>` on the project root directory.\
+\* The `port` argument is not mandatory, if `port` was not provided, the default port will be *3000*.
 
 ### Have Fun
