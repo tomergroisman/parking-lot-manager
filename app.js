@@ -1,5 +1,7 @@
 const server = require('./server');
 
-const port = 3000;
+console.log(process.argv[2])
+
+const port =  process.argv[2] || 3000;
 
 server.start(port);
