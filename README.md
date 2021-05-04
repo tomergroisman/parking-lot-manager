@@ -32,8 +32,9 @@ Or to create a `setup.sh` file and copy it's content from the [corresponding fil
 
 ### Set the Security Group
 
-Our app runs on port 3000, therefore we need to add this port to inbound rules in our instance's security group.\
-Go to your security group section, select your current security group and add new **Custom TCP** rule with port range **3000** and CIDR blocks **0.0.0.0/0**
+Our app runs on port 3000 by default, therefore we need to add this port to inbound rules in our instance's security group.\
+Go to your security group section, select your current security group and add new **Custom TCP** rule with port range **3000** and CIDR blocks **0.0.0.0/0**.\
+\* You can define any port you want - just provide the corresponding argument when starting the app.
 
 ## Run
 
