@@ -26,8 +26,8 @@ const controllers = {
         res.json(parkingId);
     },
     clearParking: (req, res) => {
-        const { parkingId } = req.query;
-        const parking = db.remove(parkingId);
+        const { ticketId } = req.query;
+        const parking = db.remove(ticketId);
         if (!parking) {
             res.status(404).send("Ticket was not found");
             return;
