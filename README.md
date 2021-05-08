@@ -14,7 +14,8 @@ The charge for parking is 10$ per hour.
 ### Set the Instance Environment
 
 To start this app we need to set the environment.\
-We need to install Node JS, Git, clone the repo, install dependencies and finally run the app.\
+First, create an Ubuntu EC2 instance on AWS.\
+Now we need to install Node JS, Git, clone the repo, install dependencies and finally run the app.\
 To do so, you can either run the following commands from the command line:
 
 ``` bash
